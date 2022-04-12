@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "c74d65e0-ae94-4b6f-8f75-20c4568fe9a5",
+		"name": "Api.Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movimiento Credito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"moIdMovimiento\": 0,\r\n  \"moNumeroCuenta\": \"225487\",\r\n  \"moFecha\": \"2022-04-11T21:08:14.928Z\",\r\n  \"moTipoMovimiento\": \"Credito\",\r\n  \"moSaldoInicial\": 100,\r\n  \"moMovimiento\": 600,\r\n  \"moSaldoDisponible\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Movimientos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimiento Credito Juan Osorio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"moIdMovimiento\": 0,\r\n  \"moNumeroCuenta\": \"225487\",\r\n  \"moFecha\": \"2022-04-11T21:08:14.928Z\",\r\n  \"moTipoMovimiento\": \"Credito\",\r\n  \"moSaldoInicial\": 100,\r\n  \"moMovimiento\": 600,\r\n  \"moSaldoDisponible\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Movimientos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimiento Débito Juan Osorio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"moIdMovimiento\": 0,\r\n  \"moNumeroCuenta\": \"225487\",\r\n  \"moFecha\": \"2022-04-11T21:08:14.928Z\",\r\n  \"moTipoMovimiento\": \"Credito\",\r\n  \"moSaldoInicial\": 100,\r\n  \"moMovimiento\": 600,\r\n  \"moSaldoDisponible\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Movimientos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44305/api/Clientes/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"Clientes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar movimientos por fechas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Movimientos/1720477347/2022-04-01/2022-04-11",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Movimientos",
+						"1720477347",
+						"2022-04-01",
+						"2022-04-11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion Cliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ClIdentificacion\": \"1720477347\",\r\n  \"ClNombre\": \"Marianela Montalvo\",\r\n  \"ClGenero\": \"Masculino\",\r\n  \"ClEdad\": \"22\",\r\n  \"ClDireccion\": \"Amazonas y NNUU\",\r\n  \"ClTelefono\": \"097548965\",\r\n  \"ClContrasenia\": \"5678\",\r\n  \"ClEstado\": true\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Clientes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion Cuenta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"CuNumeroCuenta\": \"585545\",\r\n  \"CuIdCliente\": 2,\r\n  \"CuTipo\": \"Corriente\",\r\n  \"CuEstado\": true\r\n }"
+				},
+				"url": {
+					"raw": "https://localhost:44333/api/Cuentas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44333",
+					"path": [
+						"api",
+						"Cuentas"
+					]
+				},
+				"description": "Creacion de Cuenta"
+			},
+			"response": []
+		},
+		{
+			"name": "Debito Jose Lema -574",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"moNumeroCuenta\": \"478758\",\r\n  \"moTipoMovimiento\": \"Debito\",\r\n  \"moMovimiento\": -575\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/Movimientos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"Movimientos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
